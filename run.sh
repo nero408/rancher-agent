@@ -197,6 +197,7 @@ then
 else
   echo "DNS Address was set: $CATTLE_DNS_SERVER"
   CATTLE_SERVER=$CATTLE_DNS_SERVER
+  export CATTLE_SERVER=$CATTLE_DNS_SERVER
 fi
 
 if [ -z "$CATTLE_SERVER" ]; then
