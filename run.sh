@@ -264,5 +264,5 @@ if [ -n "$CATTLE_CA_CHECKSUM" ]; then
 
     fi
 fi
-
+[ -f /cattle-credentials/token ] && export CATTLE_TOKEN=$(cat /cattle-credentials/token)
 exec tini -- agent
